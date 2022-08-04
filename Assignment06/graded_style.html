@@ -1,0 +1,114 @@
+<!--
+Custom CSS styling for IPython notebooks, adapted from various sources including:
+* http://nbviewer.ipython.org/github/ketch/teaching-numerics-with-notebooks/blob/master/Styling_notebooks.ipynb
+* http://www.frankcleary.com/exporting-static-ipython-notebooks-with-style/
+Compiled 2015-03-09 by Tom Loredo
+-->
+<style>
+
+#notebook_panel { /* main background */
+    background: #888;
+    color: #f6f6f6;
+}
+
+/* set cell width to about 90 chars, so indented Markdown code isn't too narrow */
+div.cell {
+    width: 900px;
+}
+
+div #notebook { /* centre the content */
+    background: #fff; /* white background for content */
+    width: 1000px;
+    margin: auto;
+    padding-left: 1em;
+}
+
+#notebook li { /* More space between bullet points */
+margin-top:0.8em;
+}
+
+/* draw border around running cells */
+div.cell.border-box-sizing.code_cell.running {
+    border: 4px solid #A00;
+}
+
+/* Put a solid color box around each code cell and its output,
+   visually linking them together */
+div.cell.code_cell {
+    background-color: rgba(171,165,131,0.3); 
+    border-radius: 10px; /* rounded borders */
+    padding: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+div.cell.text_cell {
+    border-radius: 10px; /* rounded borders */
+    padding: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+div.text_cell_render{
+    line-height: 130%;
+    font-size: 115%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* draw border to left of text cells; using text_cell_render would put
+   right next to the text */
+div.cell.text_cell{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-left: 2px solid #CCC;
+    border-collapse: collapse;
+    border-top: none;
+    border-bottom: none;
+}
+
+div.grader{
+    background-color: rgba(0,128,0,0.3); 
+    border-radius: 10px; /* rounded borders */
+    padding: .3em 0em .5em .5em;
+    margin-top: .5em 0em .5em 0em;
+    font-weight: bold;
+}
+
+div.total{
+    background-color: rgba(0,128,0,0.3); 
+    border-radius: 10px; /* rounded borders */
+    padding: .3em 0em .5em .5em;
+    margin-top: .5em 0em .5em 0em;
+    font-weight: bold;
+}
+
+div.comments{
+    border-radius: 10px; /* rounded borders */
+    border-top: 4px solid;
+    border-color: #070;  /* was:  #505050 */
+    color: #070;
+    padding: .3em 0em .5em .5em;
+    margin-top: .5em 0em .5em 0em;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+div.grade{
+    border-radius: 10px; /* rounded borders */
+    border-bottom: 4px solid;
+    border-color: #070;
+    color: #070;
+    padding: .5em 0em .3em .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+</style>
